@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+
+  //background-color: dimgrey; // temp
+
+  font-size: $body-font-size;
+  line-height: $body-font-height;
+  font-weight: normal;
+  font-family: "Open Sans", "Arial", sans-serif;
+
+  color: $body-font-color;
+  background-color: $bg-color;
+}

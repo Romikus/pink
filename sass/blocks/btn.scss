@@ -1,0 +1,17 @@
+.btn {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+
+  border: 3px solid #fff;
+  border-radius: 28px;
+}
+
+/* --------------- desktop ------------------ */
+@media #{$desktop-widths} {
+  .btn {
+    font-size: 21px;
+  }
+}

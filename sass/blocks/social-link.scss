@@ -1,0 +1,36 @@
+.social-link {
+  display: block;
+
+  width: 45px;
+  height: 45px;
+  margin: 0 6px;
+
+  font-size: 0;
+
+  border: 3px solid rgba(40,54,69,0.1);
+  border-radius: 50%;
+
+  &--twitter {
+    background: url(../img/icon-twitter.svg) no-repeat 50% 50%;
+    background-size: 18px auto;
+  }
+
+  &--facebook {
+    background: url(../img/icon-facebook.svg) no-repeat 50% 48%;
+    background-size: 9px auto;
+  }
+
+  &--youtube {
+    background: url(../img/icon-youtube.svg) no-repeat 55% 45%;
+    background-size: 15px auto;
+  }
+
+  &:hover {
+    border-color: rgba(40,54,69,1.0);
+  }
+
+  &:active {
+    border-color: rgba(40,54,69,1.0);
+    opacity: 0.1;
+  }
+}

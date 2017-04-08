@@ -10,7 +10,7 @@ var browserSync = require("browser-sync").create();
 gulp.task("style", function() {
     var prefixer = [autoprefixer({browsers: ["last 2 version"]})];
 
-    return gulp.src("sass/style.scss")
+    gulp.src("sass/style.scss")
     	.pipe(plumber())
         .pipe(sass())
         .pipe(postcss(prefixer))

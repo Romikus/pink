@@ -1,0 +1,33 @@
+.slider__input {
+  display: none;
+}
+
+.slider__toggles {
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
+}
+
+.slider__toggle {
+  display: inline-block;
+  vertical-align: middle;
+  width: 6px;
+  height: 6px;
+  margin-right: 19px;
+
+  border-radius: 50%;
+
+  background: #bec2c7;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    background: #7e868f;
+  }
+
+  &:active {
+    background: #e9ebec;
+  }
+}
