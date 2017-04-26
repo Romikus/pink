@@ -86,7 +86,9 @@
   }
 
   .research__content {
-    margin: 0 10%;
+    max-width: 1152px;
+    margin: 0 auto;
+    padding: 0 10%
   }
 
   .research__info {

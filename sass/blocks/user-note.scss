@@ -1,0 +1,38 @@
+.user-note__title {
+  display: none;
+}
+
+.user-note__label {
+  display: block;
+  margin: 0px 0 10px 0;
+
+  text-align: center;
+}
+
+.user-note__textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 201px;
+}
+
+/* --------------- tablet ------------------ */
+@media #{$tablet-widths} {
+  .user-note__title {
+    display: block;
+  }
+
+  .user-note__label {
+    display: none;
+  }
+
+  .user-note__textarea {
+    min-height: 193px;
+  }
+}
+
+/* --------------- desktop ------------------ */
+@media #{$desktop-widths} {
+  .user-note__textarea {
+    min-height: 128px;
+  }
+}

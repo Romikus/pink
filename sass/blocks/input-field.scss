@@ -1,0 +1,53 @@
+.input-field {
+  padding: 15px 20px 14px 20px;
+
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+
+  background-color: #fff;
+  border: 2px solid #e5e5e5;
+  outline: none;
+
+  &::-webkit-input-placeholder {
+    color: #283645;
+  }
+
+  &::-moz-placeholder {
+    color: #283645;
+  }
+
+  &:-moz-placeholder {
+    color: #283645;
+  }
+
+  &:-ms-input-placeholder {
+    color: #283645;
+  }
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:active,
+  &:focus {
+    border-color: #d22856;
+  }
+}
+
+.input-field--error {
+  background-color: rgba(red, 0.2);
+}
+
+/* --------------- tablet ------------------ */
+@media #{$tablet-widths} {
+  .input-field {
+    &--phone {
+      border-right-width: 62px;
+    }
+
+    &--mail {
+      border-right-width: 62px;
+    }
+  }
+}

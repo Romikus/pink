@@ -1,0 +1,132 @@
+.gallery__item {
+  margin: 0 6.25%;
+  margin-bottom: 20px;
+}
+
+.gallery__link {
+  display: block;
+
+  cursor: pointer;
+}
+
+.gallery__image {
+  //width: 280px;
+  //height: 180px;
+  width: 100%;
+  height: auto;
+
+  vertical-align: middle;
+}
+
+.gallery__comment {
+  margin: 0;
+  padding: 18px;
+  padding-bottom: 20px;
+
+  background-color: #f2f2f2;
+}
+
+.gallery__author {
+  font-size: 14px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: bold;
+  color: #283645;
+}
+
+.gallery__time {
+  font-size: 12px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.gallery__comment-text {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+}
+
+.gallery__like {
+  position: relative;
+
+  padding: 0;
+  padding-left: 31px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    width: 14px;
+    height: 12px;
+
+    background: url(../img/icon-heart.svg) no-repeat 0 0;
+
+    transform: translateY(-50%);
+  }
+}
+
+/* --------------- tablet ------------------ */
+@media #{$tablet-widths} {
+  .gallery__item {
+    display: flex;
+    flex-direction: column;
+    width: 48.39%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .gallery__comment {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    max-width: calc(100% - 56px);
+    min-height: 109px;
+    padding: 24px 28px 22px 28px;
+  }
+
+  .gallery__author {
+    max-width: 100%;
+  }
+
+  .gallery__comment-text {
+    max-width: 100%;
+  }
+
+  .gallery__like {
+    margin-top: auto;
+    padding: 0;
+    padding-right: 30px;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 3px;
+
+      width: 14px;
+      height: 12px;
+
+      background: url(../img/icon-heart.svg) no-repeat 0 0;
+
+      transform: translateY(-50%);
+    }
+  }
+}
+
+/* --------------- desktop ------------------ */
+@media #{$desktop-widths} {
+  .gallery__item {
+    width: 31.25%;
+    margin-bottom: 54px;
+  }
+}

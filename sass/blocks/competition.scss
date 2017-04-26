@@ -1,0 +1,204 @@
+.competition {
+  background-color: $bg-color;
+  color: #283645;
+}
+
+.competition__block {
+  padding-top: 34px;
+
+  &--color {
+    background-color: #f2f2f2;
+  }
+}
+
+.competition__item {
+  margin: 0;
+  padding: 0px 6.25% 42px 6.25%;
+
+  //border: 1px solid red;
+  border: none;
+}
+
+.competition__title {
+  margin-bottom: 38px;
+  padding: 0 25px;
+  padding-top: 4px;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #d22856;
+}
+
+.competition__footer {
+  margin: 6px 6.25% 0 6.25%;
+}
+
+.competition__button {
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+.competition__note {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #283645;
+
+  &:first-letter {
+    color: #d22856;
+  }
+}
+
+/* --------------- tablet ------------------ */
+@media #{$tablet-widths} {
+  .competition {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .competition__block {
+    max-width: 100%;
+    padding-top: 0;
+
+    &--color {
+      background-color: transparent;
+    }
+
+    &--data {
+      order: -10;
+    }
+
+    &--app {
+      order: -9;
+    }
+
+    &--contact {
+      order: -8;
+    }
+  }
+
+  .competition__item {
+    margin-bottom: 52px;
+    padding: 0px 58px 55px 58px;
+
+    border: 2px solid #e5e5e5;
+
+    &--user-data {
+      padding: 0;
+      border: none;
+    }
+
+    &--progress {
+      padding-bottom: 49px;
+    }
+
+    &--contact {
+      padding-bottom: 26px
+    }
+
+    &--note {
+      padding-bottom: 51px;
+    }
+  }
+
+  .competition__title {
+    //display: block;
+    margin: 0;
+    margin-bottom: 37px;
+    padding: 0 32px;
+    //padding-top: 0;
+
+    font-size: 14px;
+    line-height: 30px;
+
+    &--contact,
+    &--note {
+      margin-bottom: 31px;
+    }
+  }
+
+  .competition__footer {
+    display: flex;
+    align-items: baseline;
+    margin: 0;
+    margin-top: 15px;
+  }
+
+  .competition__button {
+    width: 300px;
+    margin-bottom: 0;
+  }
+
+  .competition__note {
+    margin-left: auto;
+    padding-left: 20px;
+  }
+}
+
+/* --------------- desktop ------------------ */
+@media #{$desktop-widths} {
+  .competition {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+
+  .competition__block {
+    &--data,
+    &--app {
+      width: 50%;
+    }
+
+    &--progress,
+    &--progress,
+    &--contact,
+    &--note {
+      width: 100%;
+    }
+  }
+
+  .competition__item {
+    margin-bottom: 51px;
+
+    &--user-data {
+      margin-right: 35px;
+    }
+
+    &--user-app {
+      margin-left: 35px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    &--progress {
+      padding-bottom: 13px;
+      padding-left: 20px;
+      padding-right: 0;
+    }
+
+    &--contact {
+      padding-bottom: 13px;
+    }
+
+    &--note {
+      padding-bottom: 43px;
+    }
+  }
+
+  .competition__title {
+    &--contact {
+      margin-bottom: 28px;
+    }
+
+    &--note {
+      margin-bottom: 28px;
+    }
+  }
+
+  .competition__footer {
+    width: 100%;
+  }
+}

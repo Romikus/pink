@@ -1,0 +1,41 @@
+/* --------------- desktop ------------------ */
+@media #{$desktop-widths} {
+  .user-progress__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .user-progress__item {
+    box-sizing: border-box;
+    width: (100% / 3);
+    padding-left: 38px;
+    padding-right: 5px;
+
+    //flex-grow: 1;
+
+    &:nth-of-type(2) {
+      order: 4;
+    }
+
+    &:nth-of-type(3) {
+      order: 2;
+    }
+
+    &:nth-of-type(4) {
+      order: 5;
+    }
+
+    &:nth-of-type(5) {
+      order: 3;
+    }
+
+    &:nth-of-type(6) {
+      order: 6;
+    }
+
+    &:nth-of-type(2n) {
+      order: 4;
+    }
+  }
+}

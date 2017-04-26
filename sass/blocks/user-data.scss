@@ -1,0 +1,44 @@
+.user-data__title {
+  display: none;
+}
+
+.user-data__item {
+  margin-bottom: 17px;
+
+  &:last-of-type {
+    margin-bottom: 0px;
+  }
+}
+
+.user-data__label {
+  display: block;
+  margin-bottom: 5px;
+  padding-left: 22px;
+}
+
+.user-data__input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* --------------- tablet ------------------ */
+@media #{$tablet-widths} {
+  .user-data__item {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 52px;
+  }
+
+  .user-data__label {
+    flex-shrink: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-right: 19px;
+  }
+
+  .user-data__input {
+    flex-grow: 1;
+    min-width: 250px;
+  }
+}

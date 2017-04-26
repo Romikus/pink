@@ -1,0 +1,14 @@
+.text--color {
+  color: #d22856;
+}
+
+.text--display {
+  display: none;
+}
+
+/* --------------- desktop ------------------ */
+@media #{$desktop-widths} {
+  .text--display{
+    display: inline;
+  }
+}

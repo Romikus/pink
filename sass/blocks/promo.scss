@@ -116,8 +116,7 @@
     padding-bottom: 55px;
 
     background: url(../img/iphone-hand-desktop@1x.png) no-repeat 98% 100%, url(../img/bg-back-desktop@1x.jpg) no-repeat 50% 0;
-    //background-color: #1d2631;
-    background-color: aquamarine;
+    background-color: #1d2631;
     background-size: auto, cover;
 
     @media #{$retina} {
@@ -128,7 +127,10 @@
   }
 
   .promo__content {
-    width: 78.33%;
+    width: auto;
+    max-width: 1129px;
+    margin: 0 auto;
+    padding: 0 10.8%;
   }
 
   .promo__wrapper {

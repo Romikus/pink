@@ -18,6 +18,7 @@
 
 .reviews__text {
   order: 2;
+  max-width: 100%;
   margin: 0;
 
   font-size: 14px;
@@ -37,6 +38,7 @@
 
 .reviews__author {
   order: 1;
+  max-width: 100%;
   margin-bottom: 12px;
 
   font-size: 18px;
@@ -119,6 +121,7 @@
 
   .reviews__text {
     order: 1;
+    min-height: 90px;
     margin-bottom: 35px;
 
     font-size: 18px;
@@ -145,7 +148,7 @@
   }
 
   .reviews__content {
-    max-width: 1440px;
+    max-width: 1152px;
     margin: 0 auto;
     padding: 0 10%;
   }

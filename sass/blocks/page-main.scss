@@ -1,0 +1,188 @@
+.page-main {
+  background-color: $bg-color;
+  color: $body-font-color;
+}
+
+.page-main__header {
+  min-height: 236px;
+  margin-bottom: 45px;
+
+  color: #fff;
+
+  background: #1d2631 url(../img/bg-back-mobile@1x.jpg) no-repeat 50% 1.8%;
+
+  @media #{$retina} {
+    background-image: url(../img/bg-back-mobile@2x.jpg);
+    background-size: auto 462px;
+  }
+}
+
+.page-main__title {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 95px;
+  padding-bottom: 20px;
+
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.page-main__text-info {
+  margin: 0 6.25%;
+  //margin-bottom: 15px;
+}
+
+.page-main__text-block {
+  margin-bottom: 0;
+
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: #283645;
+
+  &--photo {
+    padding: 0 15px;
+  }
+}
+
+.page-main__text-note {
+  display: none;
+}
+
+.page-main__top-photo {
+  margin-top: 49px;
+  margin-bottom: 20px;
+}
+
+/* --------------- tablet ------------------ */
+@media #{$tablet-widths} {
+  .page-main__header {
+    min-height: 440px;
+    margin-bottom: 92px;
+
+    background: #1d2631 url(../img/bg-back-tablet@1x.jpg) no-repeat 50% 0;
+
+    @media #{$retina} {
+      background-image: url(../img/bg-back-tablet@2x.jpg);
+      background-size: auto 729px;
+    }
+  }
+
+  .page-main__title {
+    width: 620px;
+    margin: 0 auto;
+    padding-top: 180px;
+    padding-bottom: 60px;
+
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .page-main__text-info {
+    margin: 0 5.71%;
+    margin-bottom: 71px;
+  }
+
+  .page-main__text-block {
+    padding: 0 8%;
+
+    font-size: 18px;
+  }
+
+  .page-main__text-note {
+    display: block;
+  }
+
+  .page-main__competition {
+    margin: 0 5.71%;
+    margin-bottom: 51px;
+  }
+
+  .page-main__top-photo {
+    margin-top: 49px;
+    margin-bottom: 50px;
+  }
+
+  .page-main__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: stretch;
+    margin: 0 5.71%;
+  }
+}
+
+/* --------------- desktop ------------------ */
+@media #{$desktop-widths} {
+  .page-main__header {
+    min-height: 394px;
+    margin-bottom: 92px;
+
+    background: #1d2631 url(../img/bg-back-desktop@1x.jpg) no-repeat 50% 0;
+
+    @media #{$retina} {
+      background-image: url(../img/bg-back-desktop@2x.jpg);
+      background-size: auto 853px;
+    }
+  }
+
+  .page-main__title {
+    width: 820px;
+    margin: 0 auto;
+    padding-top: 173px;
+  }
+
+  .page-main__text-note {
+    display: inline;
+  }
+
+  .page-main__content {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .page-main__text-info {
+    margin: 0 10%;
+    margin-bottom: 66px;
+    padding: 0 10px;
+  }
+
+  .page-main__text-item {
+    display: block;
+  }
+
+  .page-main__competition {
+    margin: 0 10%;
+    padding: 0 10px;
+  }
+
+  .page-main__top-photo {
+    margin-top: 88px;
+  }
+
+  .page-main__gallery {
+    justify-content: space-around;
+    margin: 0 10%;
+  }
+
+  .page-main__post {
+    margin: 0 10%;
+    margin-bottom: 27px;
+  }
+}
+
+/* --------------- desktop ------------------ */
+/* --------- for background image ----------- */
+
+@media (min-width: 2560px) {
+  .page-main__header {
+    background-size: cover;
+
+    @media #{$retina} {
+      background-size: cover;
+    }
+  }
+}

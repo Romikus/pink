@@ -14,6 +14,26 @@ $menu-bg-color: #283645;
 $font-color-hover: #d22856;
 
 $mobile-widths-only: "(max-width: 699px)";
+$tablet-widths-only: "(max-width: 1199px)";
 $tablet-widths: "(min-width: 700px)";
 $desktop-widths: "(min-width: 1200px)";
 $retina: "(min-resolution: 144dpi), (min-resolution: 1.5dppx)";
+
+/* input[type=range] */
+$track-height: 2px;
+$track-color: #283645;
+$track-focus-color: #283645;
+
+$thumb-width: 14px;
+$thumb-height: 14px;
+$thumb-color: #f2f2f2;
+$thumb-radius: 50%;
+$thumb-border-width: 2px;    /* учитывается в общих размерах элемента */
+$thumb-border-color: #d22856;
+$thumb-focus-color: #d22856;
+
+/* menu toggle */
+$toggle-animation-duration: 0.6s;
+
+/* menu dropdown */
+$menu-dropdown-duration: 0.4s;

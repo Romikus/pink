@@ -1,0 +1,159 @@
+.top-photo__link {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+
+  &::before {
+    content: "Панорама дня";
+    position: absolute;
+    top: 0;
+    right: 6.25%;
+
+    width: 120px;
+    //min-height: 36px;
+    padding: 6px 10px;
+
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+
+    background-color: #d22856;
+  }
+}
+
+.top-photo__image {
+  img {
+    width: 100%;
+    height: auto;
+
+    vertical-align: bottom;
+  }
+}
+
+.top-photo__comment {
+  margin: 0 6.25%;
+  padding: 18px;
+  padding-bottom: 20px;
+
+  background-color: #f2f2f2;
+}
+
+.top-photo__author {
+  font-size: 14px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: bold;
+  color: #283645;
+}
+
+.top-photo__time {
+  font-size: 12px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.top-photo__comment-text {
+  margin: 0;
+  margin-bottom: 9px;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+}
+
+.top-photo__like {
+  position: relative;
+
+  padding: 0;
+  padding-left: 31px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    width: 14px;
+    height: 12px;
+
+    background: url(../img/icon-heart.svg) no-repeat 0 0;
+
+    transform: translateY(-50%);
+  }
+}
+
+/* --------------- tablet ------------------ */
+@media #{$tablet-widths} {
+  .top-photo__link {
+    &::before {
+      top: 57px;
+      right: 5.71%;
+    }
+  }
+
+  .top-photo__comment {
+    position: relative;
+
+    margin: 0 5.71%;
+    padding: 24px 28px 15px 27px;
+  }
+
+  .top-photo__like {
+    position: absolute;
+    top: 24px;
+    right: 28px;
+
+    max-width: 160px;
+    padding: 0;
+    padding-right: 31px;
+
+    text-align: right;
+
+    &:before {
+      display: none;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+
+      width: 14px;
+      height: 12px;
+
+      background: url(../img/icon-heart.svg) no-repeat 0 0;
+
+      transform: translateY(-50%);
+    }
+  }
+}
+
+/* --------------- desktop ------------------ */
+@media #{$desktop-widths} {
+  .top-photo__link {
+    &::before {
+      top: 54px;
+      right: 10.83%;
+    }
+  }
+
+  .top-photo__comment {
+    margin: 0 10.83%;
+    padding-bottom: 14px;
+  }
+
+  .top-photo__like {
+    top: 25px;
+    right: 27px;
+
+    &:after {
+      right: 3px;
+    }
+  }
+}

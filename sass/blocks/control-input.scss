@@ -1,0 +1,142 @@
+.control-input {
+  -webkit-appearance: none;
+
+  width: calc(87.5% - 40px);
+
+  &:focus {
+    outline: none;
+  }
+
+  &::-webkit-slider-runnable-track {
+    width: calc(87.5% - 40px);
+    height: $track-height;
+
+    background: $track-color;
+
+    cursor: pointer;
+    animate: 0.2s;
+  }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+
+    width: $thumb-width;
+    height: $thumb-height;
+    margin-top: -(($thumb-height - $track-height) / 2);
+
+    background: $thumb-color;
+    border: $thumb-border-width solid $thumb-border-color;
+    border-radius: $thumb-radius;
+    cursor: pointer;
+  }
+
+  &:focus::-webkit-slider-runnable-track {
+    background: $track-focus-color;
+  }
+
+  &:focus::-webkit-slider-thumb {
+    background: $thumb-focus-color;
+  }
+
+  &::-moz-range-track {
+    width: calc(87.5% - 40px);
+    height: $track-height;
+
+    background: $track-color;
+
+    cursor: pointer;
+    animate: 0.2s;
+  }
+
+  &::-moz-range-thumb {
+    width: $thumb-width;
+    height: $thumb-height;
+
+    background: $thumb-color;
+    border: $thumb-border-width solid $thumb-border-color;
+    border-radius: $thumb-radius;
+    cursor: pointer;
+  }
+
+  &::-ms-track {
+    width: calc(87.5% - 40px);
+    height: $track-height;
+
+    background: $track-color;
+
+    cursor: pointer;
+    animate: 0.2s;
+  }
+
+  &::-ms-fill-lower {
+    background: $track-color;
+  }
+
+  &::-ms-fill-upper {
+    background: $track-color;
+  }
+
+  &::-ms-thumb {
+    width: $thumb-width;
+    height: $thumb-height;
+
+    background: $thumb-color;
+    border: $thumb-border-width solid $thumb-border-color;
+    border-radius: $thumb-radius;
+    cursor: pointer;
+  }
+
+  &:focus::-ms-fill-lower {
+    background: $track-focus-color;
+  }
+
+  &::focus::-ms-fill-upper {
+    background: $track-focus-color;
+  }
+
+  &::focus:-ms-thumb {
+    background: $thumb-focus-color;
+  }
+}
+
+/* --------------- tablet ------------------ */
+@media #{$tablet-widths} {
+  .control-input {
+    width: calc(100% - 55px);
+    margin: 0;
+  }
+
+  &::-webkit-slider-runnable-track {
+    width: calc(100% - 55px);
+    margin: 0;
+  }
+
+  &::-moz-range-track {
+    width: calc(100% - 55px);
+    margin: 0;
+  }
+
+  &::-ms-track {
+    width: calc(100% - 55px);
+    margin: 0;
+  }
+}
+
+/* --------------- desktop ------------------ */
+@media #{$desktop-widths} {
+  .control-input {
+    width: calc(100% - 92px);
+  }
+
+  &::-webkit-slider-runnable-track {
+    width: calc(100% - 92px);
+  }
+
+  &::-moz-range-track {
+    width: calc(100% - 92px);
+  }
+
+  &::-ms-track {
+    width: calc(100% - 92px);
+  }
+}

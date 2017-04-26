@@ -59,6 +59,8 @@
   height: 421px;
   margin-top: 50px;
 
+  text-align: center;
+
   background: url(../img/icon-map-marker.svg) no-repeat 50% 85%,
               url(../img/bg-map-mobile@1x.png) no-repeat 50% 0;
   @media #{$retina} {
@@ -70,6 +72,8 @@
     content: '';
     position: absolute;
     top: 0;
+    left: 0;
+    z-index: 10;
 
     border-left: 50vw solid transparent;
     border-right: 50vw solid transparent;
@@ -126,7 +130,7 @@
 /* --------------- desktop ------------------ */
 @media #{$desktop-widths} {
   .contacts__content {
-    max-width: 1440px;
+    max-width: 1152px;
     margin: 0 auto;
     padding: 0 10%;
   }

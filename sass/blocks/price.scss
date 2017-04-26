@@ -30,8 +30,6 @@
 
 .price__list-header {
   color: #fff;
-
-  background-color: #283645;
 }
 
 .price__item-header {
@@ -39,6 +37,7 @@
 
   text-align: center;
 
+  background-color: #283645;
   border-left: 2px solid #e5e5e5;
 
   &:first-child {
@@ -75,8 +74,6 @@
 
 .price__list {
   color: #283645;
-
-  background-color: #fff;
 }
 
 .price__item {
@@ -88,6 +85,7 @@
   line-height: 30px;
   text-transform: uppercase;
 
+  background-color: #fff;
   border-bottom: 2px solid #e5e5e5;
   border-left: 2px solid #e5e5e5;
 
@@ -252,7 +250,7 @@
   }
 
   .price__content {
-    max-width: 1440px;
+    max-width: 1152px;
     margin: 0 auto;
     padding: 0 10%;
   }

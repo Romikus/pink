@@ -31,3 +31,30 @@
     background: #e9ebec;
   }
 }
+
+/* --------------- desktop ------------------ */
+@media #{$desktop-widths} {
+  .slider__item--slide-right {
+    transform: translateX(0);
+    animation-name: slide-right;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-direction: reverse;
+  }
+
+  .slider__item--slide-left {
+    transform: translateX(0);
+    animation-name: slide-left;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-direction: reverse;
+  }
+
+  @keyframes slide-right {
+    to {transform: translateX(90%);}
+  }
+
+  @keyframes slide-left {
+    to {transform: translateX(-90%);}
+  }
+}

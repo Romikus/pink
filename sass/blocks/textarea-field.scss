@@ -1,0 +1,45 @@
+.textarea-field {
+  display: block;
+  padding: 15px 20px;
+
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+
+  border: 2px solid #e5e5e5;
+  outline: none;
+  resize: none;
+
+  &::-webkit-input-placeholder {
+    color: #283645;
+  }
+
+  &::-moz-placeholder {
+    color: #283645;
+  }
+
+  &:-moz-placeholder {
+    color: #283645;
+  }
+
+  &:-ms-input-placeholder {
+    color: #283645;
+  }
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:active,
+  &:focus {
+    border-color: #d22856;
+  }
+}
+
+/* --------------- tablet ------------------ */
+@media #{$tablet-widths} {
+  .textarea-field {
+    //padding: 14px;
+    padding: 15px 19px;
+  }
+}

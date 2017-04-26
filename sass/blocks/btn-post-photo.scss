@@ -1,0 +1,54 @@
+.btn-post-photo {
+  display: block;
+  padding: 15px 15px 16px 15px;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+
+  background-color: transparent;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 27px;
+  outline: none;
+  cursor: pointer;
+
+  &--submit {
+    color: #d22856;
+
+    border-color: #d22856;
+
+    &:hover {
+      color: #fff;
+
+      background-color: #d22856;
+    }
+
+    &:active {
+      color: rgba(#fff, 0.3);
+
+      background-color: #d22856;
+    }
+  }
+
+  &--reset {
+    color: #283645;
+
+    border-color: #283645;
+    opacity: 0.1;
+
+    &:hover {
+      opacity: 0.3;
+    }
+
+    &:active {
+      color: rgba(#fff, 0.3);
+
+      background-color: #283645;
+      opacity: 0.3;
+    }
+  }
+}

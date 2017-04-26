@@ -1,3 +1,5 @@
+@import "normalize";
+
 @import "variables.scss";
 @import "mixins.scss";
 
@@ -6,16 +8,42 @@
 
 @import "blocks/advantage.scss";
 @import "blocks/btn.scss";
+@import "blocks/btn-like.scss";
+@import "blocks/btn-popup.scss";
+@import "blocks/btn-post-photo.scss";
+@import "blocks/btn-submit.scss";
+@import "blocks/checkbox.scss";
+@import "blocks/competition.scss";
 @import "blocks/contacts.scss";
+@import "blocks/control-input.scss";
+@import "blocks/control-label.scss";
 @import "blocks/info.scss";
+@import "blocks/input-field.scss";
+@import "blocks/failure.scss";
+@import "blocks/gallery.scss";
+@import "blocks/label-field.scss";
 @import "blocks/main-nav.scss";
+@import "blocks/modal-overlay.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/page-header.scss";
+@import "blocks/page-main.scss";
+@import "blocks/post-photo.scss";
 @import "blocks/price.scss";
 @import "blocks/promo.scss";
+@import "blocks/radio.scss";
 @import "blocks/research.scss";
 @import "blocks/reviews.scss";
 @import "blocks/slider.scss";
 @import "blocks/social-link.scss";
+@import "blocks/success.scss";
+@import "blocks/svg-sprite.scss";
 @import "blocks/table.scss";
+@import "blocks/text.scss";
+@import "blocks/textarea-field.scss";
+@import "blocks/top-photo.scss";
+@import "blocks/user-app.scss";
+@import "blocks/user-contact.scss";
+@import "blocks/user-data.scss";
+@import "blocks/user-note.scss";
+@import "blocks/user-progress.scss";
 @import "blocks/visually-hidden.scss";
